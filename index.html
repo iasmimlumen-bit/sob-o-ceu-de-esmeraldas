@@ -560,9 +560,9 @@
         <nav>
             <ul>
                 <li><a onclick="switchView('hub')" id="nav-hub" class="active">Início</a></li>
-                <li><a onclick="switchView('painting')" id="nav-painting">A Pintura</a></li>
-                <li><a onclick="switchView('letter')" id="nav-letter">A Carta</a></li>
-                <li><a href="https://iasmimlumen-bit.github.io/mapa-musical/" target="_blank">Mapa Musical ↗</a></li>
+                <li><a onclick="switchView('painting')" id="nav-painting">A pintura</a></li>
+                <li><a onclick="switchView('letter')" id="nav-letter">A carta</a></li>
+                <li><a href="https://iasmimlumen-bit.github.io/mapa-musical/" target="_blank">Mapa musical ↗</a></li>
             </ul>
         </nav>
     </header>
@@ -580,13 +580,11 @@
                 <div class="hub-card" onclick="switchView('painting')">
                     <span class="icon">🎨</span>
                     <h3>Uma pintura</h3>
-                    <p>O que Antonella não conseguiu dizer.</p>
                 </div>
 
                 <div class="hub-card" onclick="switchView('letter')">
                     <span class="icon">💌</span>
                     <h3>Uma carta</h3>
-                    <p>O que o tempo tentou esconder.</p>
                 </div>
 
                 <a href="https://iasmimlumen-bit.github.io/mapa-musical/" target="_blank" class="hub-card">
@@ -643,7 +641,6 @@
             <div class="letter-room">
                 <div class="letter-header">
                     <h2>UMA CARTA</h2>
-                    <p>Florença</p>
                 </div>
 
                 <button class="ambient-audio-btn" id="audio-toggle-btn" onclick="toggleAudio()">
@@ -664,14 +661,14 @@
 
                 <!-- Estado do Documento Aberto -->
                 <div class="paper-doc" id="paper-doc">
-                    <h3>Florença, 14 de Outubro</h3>
+                    <h3>14 de Outubro</h3>
                     
                     <div class="letter-body">
                         Querida Nina,
 
                         Se estas linhas encontrarem caminho até você, espero que o céu de Florença ainda guarde a mesma luz daquela tarde na galeria.
 
-                        Os anos passaram com uma rapidez silenciosa, mas não houve um único dia em que as memórias de nossos passeios entre as oliveiras não tenham permanecido intactas. Guardei cada palavra silenciada e cada olhar não dito.
+                        O tempo tem passado com uma rapidez silenciosa, mas não houve um único dia em que as memórias de nossos passeios entre as oliveiras não tenham permanecido intactas, você e sua mãe são o meu lar. Não vejo a hora de retornar para casa.
                     </div>
 
                     <div class="signature-line">
@@ -688,9 +685,9 @@
                 </div>
 
                 <div class="letter-footer-note" id="letter-footer-note" style="display: none;">
-                    “Algumas palavras atravessam anos para encontrar a pessoa certa.”
+                    “Palavras permanecem.”
                     <br><br>
-                    <a onclick="switchView('hub')" style="color: var(--accent-green); cursor: pointer; text-decoration: underline;">← Voltar ao universo de Antonella</a>
+                    <a onclick="switchView('hub')" style="color: var(--accent-green); cursor: pointer; text-decoration: underline;">← Voltar</a>
                 </div>
             </div>
         </section>
@@ -746,10 +743,10 @@
         }
 
         const hotspotTexts = {
-            'sky': "“Antonella escolheu pintar o céu de esmeralda para lembrar que mesmo nos momentos mais sombrios, a esperança permanece viva.”",
+            'sky': "“Ela escolheu pintar o céu de esmeralda para lembrar que mesmo nos momentos mais sombrios, a esperança permanece viva.”",
             'light': "“A luz suave do sol cortando as nuvens, simbolizando a esperança que nunca se apaga.”",
-            'flowers': "“Os campos da Toscana e as flores por onde pai e filha costumavam caminhar juntos.”",
-            'signature': "“Nina: A assinatura selando a história.”"
+            'flowers': "“Os campos e as flores por onde pai e filha costumavam caminhar juntos.”",
+            'signature': "“Nina”"
         };
 
         function triggerHotspot(key) {
